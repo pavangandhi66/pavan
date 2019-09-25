@@ -1,0 +1,132 @@
+<html>
+<head>
+    <title> Sambrahm Event Management </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lobster|Josefin+Slab|Lobster+Two|Coustard" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico|Markazi+Text" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Merienda|Oleo+Script" rel="stylesheet">
+<!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!--jquery sliding  -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+
+
+    <link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+<link rel="stylesheet" href="stylesheets/style.css">
+<script src="js/avail_js.js"></script>
+	<script type="text/javascript">
+
+    function validate(){
+
+
+
+
+      var ur="invoice.html";
+      window.location=ur;
+
+      return false;
+      //window.location.href=open('index.html');
+
+
+
+    }
+  </script>
+
+
+</head>
+
+<body ng-app="myApp">
+
+
+        <div id="admin1" style="background:black">
+
+          &nbsp;
+            <div id="head">
+                <h1> Sambrham Events </h1>
+            </div>
+
+            <div id="subtitle" class="row">
+                <div class="col-xs-offset-7">
+                    <h4>-a road to your dream eve</h4>
+                </div>
+                &nbsp;&nbsp;
+            </div>
+</div>
+<style>
+.button{
+	display: inline-block;
+	padding: 15px 25px;
+	font-size: 24px;
+	cursor:pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4caf50;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	position: absolute;
+	left: 350px;
+	top:100px;
+	height: 90px;
+}
+.button:active{
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.button:hover{
+	background-color: #3e8e41;
+
+}
+</style>
+
+  <div ng-controller="myControllerAdminForm" >
+  <div class="ng-view ng-scope" >
+  <div ng-repeat="r in receipts" id="tabledisplay">
+    <p><u><strong>Service ID</u>:</strong>{{r._id}}</p>
+<p><u><strong>Name</u>:</strong>{{r.name}}</p>
+<p><u><strong>Event Date</u>:</strong>{{r.eventdate}}</p>
+<p><u><strong>Event</u>:</strong>{{r.events}}</p>
+<p><u><strong>Requirement</u>:</strong>{{r.requirement}}</p>
+&nbsp;
+</div>
+<div id="form1" style="position:absolute;width:100%;font-size:25px;background-color:black">
+<form  style="width:250px;font-size:25px">
+<label for="event">
+    Event Price:</label>
+<input type="text" class="form-control" name="eventprice" required ng-model="eventprice">
+<label for="decoration">
+    Decoration Price:</label>
+<input type="text" class="form-control" name="decorationprice" required ng-model="decorationprice">
+<label for="catering">
+    Catering Price:</label>
+<input type="text" class="form-control" name="cateringprice" required ng-model="cateringprice">
+
+<button class="button" type="button" ng-click="giveInvoice()" onclick="return validate();">generate receipt</button>
+
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>

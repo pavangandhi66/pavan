@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Table V04</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merienda|Oleo+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico|Markazi+Text" rel="stylesheet">
+<!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+  <script src="js/avail_js.js"></script>
+
+
+
+	<script type="text/javascript">
+
+    function validate(){
+
+
+
+
+      var ur="admin_form.html";
+      window.location=ur;
+
+      return false;
+      //window.location.href=open('index.html');
+
+
+
+    }
+  </script>
+
+
+
+
+
+	</head>
+<body ng-app="myApp">
+<div id="whole">
+	&nbsp;
+	<div id="head">
+	        <h1> Sambrham Events </h1>
+</div>
+<div class="row">
+
+			<div id="subtitle" class="col-xs-4">
+&nbsp;
+      <h4>-a road to your dream eve</h4>
+
+    </div>
+	</div>
+
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+
+
+
+
+				<div class="table100 ver3 m-b-110">
+	<div class="row" id="center" ng-controller="myControllerContacts">
+                  <div>
+                  <div class="ng-view ng-scope">
+                  <div class="row " id="center">
+
+				<div class="table100-head">
+						<table>
+							<thead>
+								<tr class="row100 head">
+									<th class="cell100 column1" style="position:absolute;left:30px">Service ID</th>
+									<th class="cell100 column2" style="position:absolute;left:270px;">Name</th>
+									<th class="cell100 column3" style="position:absolute;left:390px;">Email</th>
+									<th class="cell100 column3" style="position:absolute;left:550px;">Events</th>
+									<th class="cell100 column4" style="position:absolute;left:680px;">Event Date</th>
+									<th class="cell100 column5" style="position:absolute;left:800px;">Country</th>
+									<th class="cell100 column5" style="position:absolute;left:940px;">Mobile</th>
+									<th class="cell100 column5" style="position:absolute;left:1050px;">Requirement</th>
+								</tr>
+							</thead>
+						</table>
+					</div>
+
+					<div class="table100-body js-pscroll">
+						<table>
+							<tbody>
+								<tr class="row100 body" ng-repeat="c in contacts">
+									<td class="cell100 column1" style="width:1000px;text-align:center">  {{c._id}}      </td>
+									<td class="cell100 column2" style="width:1000px;text-align:center">  {{c.name}}     </td>
+									<td class="cell100 column2" style="width:1000px;text-align:center">  {{c.emailid}}     </td>
+									<td class="cell100 column3" style="width:1000px;text-align:center">  {{c.events}}   </td>
+									<td class="cell100 column4" style="width:1000px;text-align:center" >  {{c.eventdate}} </td>
+									<td class="cell100 column5"style="width:1000px;text-align:center">  {{c.country}}    </td>
+									<td class="cell100 column5"style="width:1000px;text-align:center">  {{c.mobile}}    </td>
+								<td class="cell100 column5"style="width:1000px;text-align:center">  {{c.requirement}}    </td>
+
+								</tr>
+
+
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+			</div>
+		</div>
+	</div>
+
+
+</div>
+<div id="subtitle" class="row">
+            <div class="col-xs-3" >
+
+    </div>
+    </div>
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	<script>
+		$('.js-pscroll').each(function(){
+			var ps = new PerfectScrollbar(this);
+
+			$(window).on('resize', function(){
+				ps.update();
+			})
+		});
+
+
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+<style>
+.button{
+	display: inline	-block;
+	padding: 15px 25px;
+	font-size: 24px;
+	cursor:pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4caf50;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	position: absolute;
+	left: 650px;
+	top:600px;
+	height: 70px;
+}
+.button:active{
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+.button:hover{
+	background-color: #3e8e41;
+
+}
+</style>
+<div id="receipt">
+	<div class="row" id="center" ng-controller="myControllerReceipt">
+                  <div>
+                  <div class="ng-view ng-scope">
+
+	<form style="color:white; width:250px;height: 20px;position:absolute;left:250px;top:600px;">
+		<label for="serviceid">
+				Service Id:</label>
+		<input type="text" class="form-control" name="serviceid" required ng-model="service">
+</form>
+
+<button class="button" type="button" ng-click="giveService()" onclick="return validate();">generate receipt</button>
+</div>
+</div></div></div>
+</body>
+</html>
